@@ -8,6 +8,8 @@
     <title>Professional Profile</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -54,28 +56,28 @@
 
     <!-- About Section -->
     <section id="about" class="container py-5">
-        <h1 class="text-center">Professional Profile</h1>
-        <p class="lead text-center">Hello! I'm a professional with a wide range of skills and accomplishments.</p>
+        <h1 class="text-center" data-lang="profile-title">Professional Profile</h1>
+        <p class="lead text-center" data-lang="profile-description">Hello! I'm a professional with a wide range of skills and accomplishments.</p>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="container py-5">
-        <h2 class="text-center">Skills</h2>
+        <h2 class="text-center" data-lang="skills-title">Skills</h2>
         <div class="row">
             <div class="col-md-6">
-                <h3>Soft Skills</h3>
+                <h3 data-lang="soft-skills-title">Soft Skills</h3>
                 <ul class="list-group">
-                    <li class="list-group-item">Teamwork</li>
-                    <li class="list-group-item">Communication</li>
-                    <li class="list-group-item">Problem-Solving</li>
+                    <li class="list-group-item" data-lang="soft-skill-1">Teamwork</li>
+                    <li class="list-group-item" data-lang="soft-skill-2">Communication</li>
+                    <li class="list-group-item" data-lang="soft-skill-3">Problem-Solving</li>
                 </ul>
             </div>
             <div class="col-md-6">
-                <h3>Hard Skills</h3>
+                <h3 data-lang="hard-skills-title">Hard Skills</h3>
                 <ul class="list-group">
-                    <li class="list-group-item">Web Development</li>
-                    <li class="list-group-item">JavaScript</li>
-                    <li class="list-group-item">Python</li>
+                    <li class="list-group-item" data-lang="hard-skill-1">Web Development</li>
+                    <li class="list-group-item" data-lang="hard-skill-2">JavaScript</li>
+                    <li class="list-group-item" data-lang="hard-skill-3">Python</li>
                 </ul>
             </div>
         </div>
@@ -86,11 +88,12 @@
         <h2 class="text-center">Video Introduction</h2>
         <div class="d-flex justify-content-center">
             <video controls class="w-100" style="max-width: 600px;">
-                <source src="profile-intro.mp4" type="video/mp4">
+                <source src="videos/1494295-hd_1920_1080_24fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
         </div>
     </section>
-
+    
     <!-- Projects Section -->
     <section id="projects" class="container py-5">
         <h2 class="text-center">Projects</h2>
@@ -110,22 +113,53 @@
         </ul>
     </section>
 
-    <!-- Social Media Feed -->
+    <!-- Social Media Section -->
     <section id="social-media" class="container py-5">
-        <h2 class="text-center">Social Media Feed</h2>
-        <div id="feed-container" class="bg-light p-3 rounded">
-            <!-- JavaScript will load feed here -->
+        <h2 class="text-center" data-en="Follow Me" data-ar="تابعني" data-fr="Suivez-moi" data-ur="مجھے فالو کریں">Follow Me</h2>
+        <div class="d-flex justify-content-center">
+            <a href="https://www.instagram.com/bilawal2316/?hl=en" target="_blank" class="mx-3">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/bilawal-mughal-19979a229/" target="_blank" class="mx-3">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/billuhacker" target="_blank" class="mx-3">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
         </div>
     </section>
 
-    
+    <!-- Education Section -->
+    <section id="education" class="container py-5">
+        <h2 class="text-center">Education</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Degrees</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Bachelor's in Computer Science - 2025</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Short Courses</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Web Development Bootcamp - 2022</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Side Projects/Hackathons -->
+    <section id="side-projects" class="container py-5">
+        <h2 class="text-center">Side Projects/Hackathons</h2>         
+        <ul class="list-group">
+            <li class="list-group-item">Hackathon Participant - Softec 2022</li>
+            <li class="list-group-item">Competitive Programming - Pucon 2023</li>
+            <li class="list-group-item">Side Project: E-commerce Website Backend</li>
+        </ul>
+    </section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
-
-
-
-    
