@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,4 +29,38 @@ body {
 #about, #skills, #projects, #awards, #video-content, #social-media, #education, #side-projects {
     padding: 20px;
     margin: 20px 0;
+} */
+
+body {
+    font-family: 'Arial', sans-serif;
 }
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#video-content video {
+    max-width: 100%;
+    height: auto;
+}
+
+#feed-container {
+    min-height: 100px;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    font-size: 1.1rem;
+    background-color: #f7f7f7;
+}
+
+.list-group-item strong {
+    color: #007bff;
+}
+
