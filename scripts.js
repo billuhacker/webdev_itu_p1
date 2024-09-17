@@ -1,8 +1,8 @@
-// Define translations for different languages
+
 const translations = {
     en: {
         'profile-title': 'Professional Profile',
-        'profile-description': "Hello! I'm a professional with a wide range of skills and accomplishments.",
+        'profile-description': "Hi, I'm Muhammad Bilawal, a passionate Computer Science student with a strong interest in web development,",
         'skills-title': 'Skills',
         'soft-skills-title': 'Soft Skills',
         'soft-skill-1': 'Teamwork',
@@ -56,7 +56,7 @@ const translations = {
 
 // Function to switch language
 function switchLanguage(language) {
-    const elements = document.querySelectorAll('[data-lang]'); // Select elements with data-lang attribute
+    const elements = document.querySelectorAll('[data-lang]'); 
     elements.forEach(element => {
         const key = element.getAttribute('data-lang');
         if (translations[language] && translations[language][key]) {
@@ -65,11 +65,11 @@ function switchLanguage(language) {
     });
 }
 
-// Event listener for language selection
+
 document.getElementById('language-select').addEventListener('change', function() {
     const selectedLanguage = this.value;
     switchLanguage(selectedLanguage);
 });
 
-// Initialize default language (English)
+
 switchLanguage('en');
