@@ -1,32 +1,76 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsla(0, 11%, 78%, 0.53);
+    color: #333;
 }
 
-h1, h2, h3 {
-    color: #333;
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Use a more stylish font */
+    font-size: 3rem; /* Increase size */
+    font-weight: 900; /* Bold weight */
+    color: #f39c12; /* Bright color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    margin-bottom: 30px; /* More space below */
+    text-align: center; /* Centered text */
+    letter-spacing: 2px; /* Space between letters */
+    background: linear-gradient(to right, #d3cec6c0, #2c3e50); /* Gradient background */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Make text fill transparent */
+}
+
+h2, h3 {
+    color: #2c3e50; /* Darker color for headings */
     margin-bottom: 20px;
 }
 
-#video-content video {
-    max-width: 100%;
-    height: auto;
+.navbar {
+    background-color: #34495e; /* Darker navbar */
 }
 
-#feed-container {
-    min-height: 100px;
-    background-color: #f8f9fa;
-    padding: 20px;
+.nav-link {
+    color: #ecf0f1 !important; /* Light color for nav links */
+}
+
+.nav-link:hover {
+    color: #f39c12 !important; /* Highlight on hover */
 }
 
 .container {
     margin-top: 20px;
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding for sections */
+}
+
+#video-content video {
+    border-radius: 8px; /* Rounded video corners */
 }
 
 .list-group-item {
     font-size: 1.1rem;
-    background-color: #f7f7f7;
+    background-color: #ecf0f1; /* Lighter background for list items */
+    border: none; /* Remove borders */
 }
 
-.list-group-item strong {
-    color: #007bff;
+.list-group-item:hover {
+    background-color: #dcdcdc; /* Hover effect for list items */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #34495e; /* Footer background */
+    color: #ecf0f1; /* Footer text color */
+}
+
+/* Add some media queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        text-align: center; /* Center nav on smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Responsive size */
+    }
 }
